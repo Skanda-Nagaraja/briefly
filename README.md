@@ -14,15 +14,24 @@ briefly analyzes your codebase and generates human-readable documentation by com
 
 ## Installation
 
+Install globally via npm:
+
 ```bash
-# Clone the repository
+npm install -g @skannagaraja/briefly
+```
+
+Verify installation:
+
+```bash
+briefly --help
+```
+
+### From Source
+
+```bash
 git clone https://github.com/Skanda-Nagaraja/briefly.git
 cd briefly
-
-# Install dependencies
 npm install
-
-# Link for local development
 npm link
 ```
 
@@ -98,6 +107,8 @@ briefly uses OpenAI's API for intelligent summarization. To enable AI features:
 ```bash
 export OPENAI_API_KEY=your-api-key-here
 ```
+
+Get an API key at [platform.openai.com/api-keys](https://platform.openai.com/api-keys)
 
 Without an API key, briefly will still work but will skip AI-powered summaries. Use `--no-ai` to explicitly disable AI summarization.
 
