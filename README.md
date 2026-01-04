@@ -1,10 +1,10 @@
-# briefly 🔍
+# briefly
 
 **AI-powered CLI for generating project and file summaries**
 
 briefly analyzes your codebase and generates human-readable documentation by combining static code analysis with AI summarization. Perfect for onboarding, documentation, and understanding unfamiliar codebases.
 
-## ✨ Features
+## Features
 
 - **Project Summaries** — Get a high-level overview of any project's structure, tech stack, and dependencies
 - **File Analysis** — Deep dive into individual files with AST parsing for functions, classes, and exports
@@ -12,7 +12,7 @@ briefly analyzes your codebase and generates human-readable documentation by com
 - **Markdown Export** — Export complete project documentation to Markdown files
 - **Edge Case Detection** — Identifies important considerations and potential edge cases in code
 
-## 📦 Installation
+## Installation
 
 ```bash
 # Clone the repository
@@ -26,7 +26,7 @@ npm install
 npm link
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 # Get help
@@ -42,7 +42,7 @@ briefly module ./src/app.js
 briefly export -p ./my-project -o DOCS.md
 ```
 
-## 📋 Commands
+## Commands
 
 ### `briefly summary <path>`
 
@@ -54,7 +54,6 @@ briefly summary . --depth 5
 briefly summary ./src --no-ai --output summary.txt
 ```
 
-**Options:**
 | Option | Description | Default |
 |--------|-------------|---------|
 | `-d, --depth <n>` | Max directory depth to scan | `3` |
@@ -71,7 +70,6 @@ briefly module ./lib/utils.ts --show-ast
 briefly module ./app.py -o analysis.txt
 ```
 
-**Options:**
 | Option | Description | Default |
 |--------|-------------|---------|
 | `-o, --output <file>` | Save summary to file | — |
@@ -87,14 +85,13 @@ briefly export -p ./my-project -o DOCUMENTATION.md
 briefly export --include-code
 ```
 
-**Options:**
 | Option | Description | Default |
 |--------|-------------|---------|
 | `-p, --path <path>` | Project path to document | `.` |
 | `-o, --output <file>` | Output file | `SUMMARY.md` |
 | `--include-code` | Include code snippets | `false` |
 
-## 🤖 AI Configuration
+## AI Configuration
 
 briefly uses OpenAI's API for intelligent summarization. To enable AI features:
 
@@ -104,7 +101,7 @@ export OPENAI_API_KEY=your-api-key-here
 
 Without an API key, briefly will still work but will skip AI-powered summaries. Use `--no-ai` to explicitly disable AI summarization.
 
-## 🛠 Supported Languages
+## Supported Languages
 
 briefly can parse and analyze:
 
@@ -116,46 +113,46 @@ briefly can parse and analyze:
 
 Additional languages are detected but receive basic analysis.
 
-## 📊 What briefly Detects
+## What briefly Detects
 
 ### Project-Level
-- 📁 Directory structure and depth
-- 🛠 Tech stack (React, Vue, Express, etc.)
-- 📦 Dependencies and dev dependencies
-- 🚀 Entry points
-- 📄 File type distribution
+- Directory structure and depth
+- Tech stack (React, Vue, Express, etc.)
+- Dependencies and dev dependencies
+- Entry points
+- File type distribution
 
 ### File-Level
-- 📥 Imports and dependencies
-- 📤 Exports (named, default, re-exports)
-- ⚡ Functions (async, arrow, generators)
-- 🏛 Classes (with methods and inheritance)
-- 📌 Variables and constants
-- 💬 Comments (block and line)
+- Imports and dependencies
+- Exports (named, default, re-exports)
+- Functions (async, arrow, generators)
+- Classes (with methods and inheritance)
+- Variables and constants
+- Comments (block and line)
 
-## 🎯 Use Cases
+## Use Cases
 
-### Onboarding New Team Members
+**Onboarding New Team Members**
 ```bash
 briefly summary ./company-project -o onboarding.md
 ```
 
-### Code Reviews
+**Code Reviews**
 ```bash
 briefly module ./src/features/new-feature.ts
 ```
 
-### Documentation Generation
+**Documentation Generation**
 ```bash
 briefly export -p . -o README-GENERATED.md
 ```
 
-### Understanding Legacy Code
+**Understanding Legacy Code**
 ```bash
 briefly summary ./legacy-app --depth 10
 ```
 
-## 🧪 Development
+## Development
 
 ```bash
 # Run locally without linking
@@ -168,7 +165,7 @@ npm test
 npm run lint
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 briefly/
@@ -192,7 +189,7 @@ briefly/
 └── README.md
 ```
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -202,11 +199,11 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [Commander.js](https://github.com/tj/commander.js/) - CLI framework
 - [Acorn](https://github.com/acornjs/acorn) - JavaScript parser
@@ -215,5 +212,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Made with ❤️ by [Skanda Nagaraja](https://github.com/Skanda-Nagaraja)
-
+Made by [Skanda Nagaraja](https://github.com/Skanda-Nagaraja)
