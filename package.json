@@ -1,0 +1,49 @@
+{
+  "name": "briefly",
+  "version": "0.1.0",
+  "description": "AI-powered CLI tool for generating project and file summaries",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "briefly": "./bin/briefly.js"
+  },
+  "scripts": {
+    "start": "node bin/briefly.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "lint": "eslint src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skanda-Nagaraja/briefly.git"
+  },
+  "keywords": [
+    "cli",
+    "documentation",
+    "summary",
+    "ai",
+    "code-analysis",
+    "llm"
+  ],
+  "author": "Skanda Nagaraja",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Skanda-Nagaraja/briefly/issues"
+  },
+  "homepage": "https://github.com/Skanda-Nagaraja/briefly#readme",
+  "dependencies": {
+    "acorn": "^8.11.3",
+    "acorn-walk": "^8.3.2",
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "glob": "^10.3.10",
+    "openai": "^4.28.0",
+    "ora": "^8.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
